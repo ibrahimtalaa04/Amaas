@@ -1,0 +1,274 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="fonts/all.css"   rel="stylesheet"/>
+    <link href="fonts/fontawesome.css"   rel="stylesheet"/>
+    <title>Gallery</title>
+    <style>
+        .gallery-img{
+            height: 250px !important;
+            width: 100%;
+            transition: all 0.5s;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .hover-me{
+            display: none;
+            background-color:#000 ;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+        }
+        .gallery-img:hover .hover-me{
+            display: flex;
+        }
+
+    </style>
+        <script>
+            window.addEventListener('load',function(e){
+                getAllGallery("all",e);
+            });
+        </script>
+</head>
+<body>
+
+    <div class="continer-fluid bg-nav ">
+        <div class="container-lg p-0 p-lg-1">
+            <nav class="navbar navbar-expand-lg pe-0 py-0  ">
+                <a class="navbar-brand ms-3  mx-lg-0" href="index.html">
+                    <img src="image/brand.png" class="logo-brand"/>
+                </a>
+                <div class="navbar-toggler menu-btn order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                    <div class="menu-btn__burger"></div>
+                </div>
+                <div class="collapse navbar-collapse order-3 order-lg-1 p-0 " id="navbarNav">
+                    <ul class="navbar-nav  ms-auto  d-flex justify-content-center align-items-center bg-md-nav py-1 py-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header link-header-active" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle nav-link-Header" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu bg-dark-1 p-1" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="order.html">Place order</a></li>
+                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms of Use</a></li>
+                            </ul>
+                        </li>                
+                    </ul>
+                </div>
+                <div class="order-1 order-lg-2 ms-auto ms-lg-0 ">
+                    <a class="nav-link nav-link-Header nav-link-lang" href="#">ENG</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class=" bg-scan">
+        <div class=" container">
+            <nav class="pt-5" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-a">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+              </nav>
+            <h1 class="title">Gallery</h1>
+        </div>
+    </div>
+
+    <div class=" container-fluid bg-light-60">
+        <div class=" container text-center pb-5  pt-5">
+            <ul class="tabs row row-cols-2 row-cols-lg-6 justify-content-center align-items-center">
+                <li class="col btn-project my-2 project-active" data-type="all">All</li>
+                <li class="col btn-project my-2" data-type="apartment" >Apartments</li>
+                <li class="col btn-project my-2" data-type="villa">Villas</li>
+            </ul>
+        </div>
+        <div class="container pb-5">
+            <div class="one">
+                <div class=" row pb-5" id="innerGallery">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="container-fluid bg-footer pt-5">
+        <div class="container mt-0 mt-lg-0 pt-0 pt-lg-0">
+            <div class="row pb-4">
+                <div class="col-lg-4 mt-5">
+                    <a href="index.html"><img src="image/brand.png" class="logo-brand"/></a>
+                    <div class="mt-3">
+                        <p class="footer-company-desc">
+                            Amas is a real estate development company to build and sell a variety of real estate with high quality, extended guarantees and competitive prices. We strive to achieve the highest structural specifications and select the best building materials to reach high community standards and gain consumer satisfaction.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 fw-bold mt-5 pe-5">
+                    <ul class="nav flex-column ">
+                    <h5 class="link-footer-parent"><span class="">USEFUL LINKS</span> </h5>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ms-0 mb-1 px-0  link-footer">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link ms-0  mb-1 px-0 link-footer">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link ms-0 mb-1  px-0 link-footer">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link ms-0 mb-1  px-0 link-footer">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link ms-0 mb-1  px-0 link-footer">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order.html" class="nav-link ms-0 mb-1  px-0 link-footer">Place order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="terms.html" class="nav-link ms-0 mb-1  px-0 link-footer">Term use</a>
+                    </li>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h5 class="link-footer-parent"><span class="">Newsletter Subscribe</span> </h5>
+
+                            <form id="footerform" class="">
+                                <div class="">
+                                    <label for="emailtxt" class="form-label"></label>
+                                    <input type="text" class="form-control bg-transparent text-white py-2 px-2" placeholder="Enter Your E-mail" id="emailtxt" >
+                                    <div class="invalid-email"></div>
+                                </div>
+                                <button class="btn w-100 mt-3 btn-yellow text-white" type="submit">Subscription</button>
+                            </form>
+                    <div class="mt-4">
+                        <div class="d-inline-block ms-1 me-3">
+                            <a href="http://facebook.com/people/Amaas-Realestate/10007915978616" >
+                                <i class="fa-brands fa-facebook-f footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block   me-3">
+                            <a href="https://twitter.com/amaasrealestate">
+                                <i class="fa-brands fa-twitter footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://api.whatsapp.com/message/UZV7GQTD6S7FA1">
+                                <i class="fa-brands fa-whatsapp footer-links"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.youtube.com/channel/UCKftYeW9JhMnSlUM8ORun6w">
+                                <i class="fa-brands fa-youtube footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.instagram.com/amaasrealestate/">
+                                <i class="fa-brands fa-instagram footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.linkedin.com/company/amaasrealestate/">
+                                <i class="fa-brands fa-linkedin-in footer-links"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer text-center text-white fw-bold fs-5 py-4 footer-border-top">
+        All rights reserved to Amaas Company © 2022
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        let tabsArray = document.querySelectorAll(".tabs li");
+            let divs = document.querySelector(".one");
+            tabsArray.forEach((ele) => {
+                ele.addEventListener("click", function (e) {
+                    tabsArray.forEach((ele) => {
+                        if(ele.classList.contains("project-active"))
+                            ele.classList.remove("project-active");
+                    });
+                   
+                    e.currentTarget.classList.add("project-active");
+                    var type=ele.getAttribute('data-type');
+                    var project=[];
+                    if(type=="all"){getAllGallery(type,e)}
+                    else if(type=="apartment")
+                        getAllGallery(type,e);
+                    else if(type=="villa")
+                        getAllGallery(type,e)
+                    
+                    
+                });
+            });
+        function getAllGallery(type,e){
+
+        let tabsArray = document.querySelectorAll(".tabs li");
+        var inner=document.querySelector('#innerGallery');
+            inner.innerHTML= "";
+            var project=[];
+            if(type=="all"){project=projects; }
+            else if(type=="apartment" || type=="villa")
+                    project=projects.filter((ele)=> ele.type==type);
+            
+            
+            
+            for(var i=0;i<project.length;i++)
+            {
+                inner.innerHTML+=
+                `<div class="col-md-6 col-lg-4 p-0" >
+                            <a href="gallery-details.html?pid=${project[i].id}" class=" text-decoration-none">
+                                <div class="gallery-img position-relative p-0" style="background-image:url(image/${project[i].gallery[0]});">
+                                    <div class="hover-me">
+                                        <img src="image/logo.png" alt="">
+                                        <h1 class="text-white fw-bold">${project[i].name}</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>`;
+            }
+    };
+    </script> 
+</body>
+</html>

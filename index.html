@@ -1,0 +1,551 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="image/brand.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/index.css"  rel="stylesheet"/>
+    <link href="fonts/all.css"   rel="stylesheet"/>
+    <link href="fonts/fontawesome.css"   rel="stylesheet"/>
+    <title>Home Page</title>
+    <script src="js/database.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <script>
+
+        window.addEventListener('load',function(e){
+            getAllProjects(6,"all",e);
+        });
+    </script>
+  
+</head>
+<body>
+
+    <div class="continer-fluid bg-nav ">
+        <div class="container-lg p-0 p-lg-1">
+            <nav class="navbar navbar-expand-lg pe-0 py-0  ">
+                <a class="navbar-brand ms-3  mx-lg-0" href="index.html">
+                    <img src="image/brand.png" class="logo-brand"/>
+                </a>
+                <div class="navbar-toggler menu-btn order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                    <div class="menu-btn__burger"></div>
+                </div>
+                <div class="collapse navbar-collapse order-3 order-lg-1 p-0 " id="navbarNav">
+                    <ul class="navbar-nav  ms-auto  d-flex justify-content-center align-items-center bg-md-nav py-1 py-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header link-header-active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header"  href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle nav-link-Header" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu bg-dark-1 p-1" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="order.html">Place order</a></li>
+                                <li><a class="dropdown-item" href="career.html">Careers</a></li>
+                                <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                                <li><a class="dropdown-item" href="terms.html">Terms of Use</a></li>
+                            </ul>
+                        </li>                
+                    </ul>
+                </div>
+                <div class="order-1 order-lg-2 ms-auto ms-lg-0 ">
+                    <a class="nav-link nav-link-Header nav-link-lang" href="#">ENG</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid p-0">
+            <div class="p-0">
+                <div class=" header-parent p-0 m-0">
+                    <div class="container-lg p-lg-0 h-100">
+                        <div class="row h-100 justify-content-start align-items-center">
+                            <div class="col-5 col-sm-3 col-lg-6 ">
+                                <h1 class="text-white head-100">DISCOVER MODERN VILLA</h1>
+                                <a href="projects.html" class="btn btn-yellow  px-4 px-lg-5 text-white fw-bold text-uppercase">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" bg-light-60 pt-5">
+                <div class="container-lg ">
+                    <div class="row">
+                        <div class="col-sm-5 col-lg-6">
+                            <img src="image/villa.png" class="w-100"/>
+                        </div>
+                        <div class="col-sm-6 col-lg-6 ms-auto mt-5 mt-sm-0 ">
+                            <h6 class="text-dark mb-4">Slogan Here</h6>
+                            <h2 class="text-yellow mb-4">About Amaas Company</h2>
+                            <p class="text-dark-30 mb-4">A real estate development company that builds and sells a variety of properties with high quality, extended warranties and competitive prices.We strive to achieve the highest structural specifications and choose the best building materials to reach high community standards and win consumer satisfaction. </p>
+                            <div class="d-flex  mb-2">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                </div>
+                                <div class="text-dark-30">
+                                    Launched in 2021 on the 17th of January.
+                                </div>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                </div>
+                                <div class="text-dark-30">
+                                    We have completed nearly 750 properties ranging from apartments to
+                                     villas in different cities of the Kingdom.
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                </div>
+                                <div class="text-dark-30">
+                                    We're in:  Eastern Province ,Riyadh (so far)
+                                </div>
+                            </div>
+                            <div class="row w-100 row-cols-1 row-cols-sm-2 row-cols-lg-3 py-5 justify-content-center align-items-center">
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0  ">
+                                        <div class="square mb-3"></div>
+                                        <h5 class="fw-bold">2450</h5>
+                                        <p>SQUARE FEET</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"></div>
+                                        <h5 class="fw-bold">2450</h5>
+                                        <p>SQUARE FEET</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"></div>
+                                        <h5 class="fw-bold">2450</h5>
+                                        <p>SQUARE FEET</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"></div>
+                                        <h5 class="fw-bold">2450</h5>
+                                        <p>SQUARE FEET</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"></div>
+                                        <h5 class="fw-bold">2450</h5>
+                                        <p>SQUARE FEET</p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <div class="bg-yellow">
+                <div class="container-lg d-flex flex-column align-items-center py-5">
+                    <h1 class="text-dark mb-4">How It Works</h1>
+                    <img src="image/world with lines.png" class="world-lines"/>
+                    <div class="row text-center mt-3">
+
+                        <div class="col-lg-4 mt-4">
+                            <div>
+                                <img src="image/explore.png" />
+                                <h3 class="mt-4">Explore</h3>
+                                <p class="text-dark fw-bold">Many different options on location, features and prices, with its similarity in quality and beauty.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div>
+                                <img src="image/call.png" />
+                                <h3 class="mt-4">Contact</h3>
+                                <p class="text-dark  fw-bold">Ask us what's on your mind and discuss your inquiries to reach an agreement that satisfies everyone.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div>
+                                <img src="image/smile.png" />
+                                <h3 class="mt-4">Own</h3>
+                                <p class="text-dark fw-bold">Congratulations! With a few easy steps, you become a member of Amas family, and you own your dream house.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light-60">
+                <div class=" container pb-5">
+                    <div class=" row text-center pt-2">
+                        <h1 class="text-dark py-4">Why Choose Us</h1>
+                            <p class=" text-dark fw-bold mb-4">Reasons why people love to find their dream house with us</p>
+                        <div class=" col-lg-4 mt-2">
+                            <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
+                                <img src="image/location.png" class="mt-3">
+                                <p class="mt-3">Presence in strategic locations surrounded by all the important services</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
+                                <img src="image/protection.png" class="mt-3">
+                                <p class="mt-3">Provide guarantees up to 25 years on all basics.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
+                                <img src="image/chat.png" class="mt-3">
+                                <p class="mt-3">Ensuring constant communication between Amas officials and customers to ensure the best possible service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" container-fluid">
+                    <div class="text-center">
+                        <h1 class="text-dark py-4">Our Projects</h1>
+                        <p class=" text-dark fw-bold mb-4">OUR FEATURED EXCLUSIVES</p>
+                    </div>
+                    <div class=" container pb-5 justify-content-center bg-light text-center">
+                        <ul class="tabs row row-cols-2 row-cols-lg-6 justify-content-center align-items-center">
+                            <li class="col btn-project my-2 project-active me-3" data-type="all">All</li>
+                            <li class="col btn-project my-2   me-3" data-type="apartment" >Apartments</li>
+                            <li class="col btn-project my-2   me-3" data-type="villa">Villas</li>
+                            <li class="col btn-project my-2   me-3" data-type="sold">Sold out</li>
+                            <li class="col btn-project my-2   me-3"data-type="forsale">Open Sale</li>
+                        </ul>
+                    </div>
+                    <div class="bg-light-60"></div>
+                    <div class="container">
+                        <div class="one">
+
+                                <div class=" row align-items-stretch" id="innerProject">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center py-5">
+                                    <a href="projects.html" class="btn btn-yellow py-2 px-5 text-white">See More</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="pb-5 bg-light-60">
+    <div class=" container pb-5 ">
+        <h1 class="text-dark mb-5 text-center">Testimonial</h1>
+        <div class="pb-5" style="height: 300px;">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testomial  py-3 px-4">
+                            <div class="d-flex ">
+                                <div>
+                                    <img src="image/person1.png">
+                                </div>
+                                <div class="ms-3 mt-3 text-start">
+                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                        <span class="testomial-span">(CEO - SAMA).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testomial py-3 px-4">
+                            <div class="d-flex ">
+                                <div>
+                                    <img src="image/person1.png">
+                                </div>
+                                <div class="ms-3 mt-3 text-start">
+                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                        <span class="testomial-span">(CEO - SAMA).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testomial py-3 px-4">
+                            <div class="d-flex ">
+                                <div>
+                                    <img src="image/person1.png">
+                                </div>
+                                <div class="ms-3 mt-3 text-start">
+                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                        <span class="testomial-span">(CEO - SAMA).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testomial py-3 px-4">
+                            <div class="d-flex ">
+                                <div>
+                                    <img src="image/person1.png">
+                                </div>
+                                <div class="ms-3 mt-3 text-start">
+                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                        <span class="testomial-span">(CEO - SAMA).</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+    <div class="container pb-5">
+    <h1 class="text-dark mb-5 text-center">Our Partners</h1>
+
+        <div class="swiper swpartners">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner1.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner2.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner3.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner4.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner5.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner6.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner7.png" class="sw-img"/>
+            </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+    <div class="container-fluid bg-footer pt-5">
+        <div class="container mt-0 mt-lg-0 pt-0 pt-lg-0">
+            <div class="row pb-4">
+                <div class="col-lg-4 mt-5">
+                    <a href="index.html"><img src="image/brand.png" class="logo-brand"/></a>
+                    <div class="mt-3">
+                        <p class="footer-company-desc">
+                            Amas is a real estate development company to build and sell a variety of real estate with high quality, extended guarantees and competitive prices. We strive to achieve the highest structural specifications and select the best building materials to reach high community standards and gain consumer satisfaction.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 fw-bold mt-5 pe-5">
+                    <ul class="nav flex-column ">
+                    <h5 class="link-footer-parent"><span class="">USEFUL LINKS</span> </h5>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ms-0 mb-1 px-0  link-footer link-active-footer">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link ms-0  mb-1 px-0 link-footer">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link ms-0 mb-1  px-0 link-footer">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link ms-0 mb-1  px-0 link-footer">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link ms-0 mb-1  px-0 link-footer">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="order.html" class="nav-link ms-0 mb-1  px-0 link-footer">Place order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="terms.html" class="nav-link ms-0 mb-1  px-0 link-footer">Term use</a>
+                    </li>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h5 class="link-footer-parent"><span class="">Newsletter Subscribe</span> </h5>
+
+                            <form id="footerform" class="">
+                                <div class="">
+                                    <label for="emailtxt" class="form-label"></label>
+                                    <input type="text" class="form-control bg-transparent text-white py-2 px-2" placeholder="Enter Your E-mail" id="emailtxt" >
+                                    <div class="invalid-email"></div>
+                                </div>
+                                <button class="btn w-100 mt-3 btn-yellow text-white" type="submit">Subscription</button>
+                            </form>
+                    <div class="mt-4">
+                        <div class="d-inline-block ms-1 me-3">
+                            <a href="http://facebook.com/people/Amaas-Realestate/10007915978616" >
+                                <i class="fa-brands fa-facebook-f footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block   me-3">
+                            <a href="https://twitter.com/amaasrealestate">
+                                <i class="fa-brands fa-twitter footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://api.whatsapp.com/message/UZV7GQTD6S7FA1">
+                                <i class="fa-brands fa-whatsapp footer-links"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.youtube.com/channel/UCKftYeW9JhMnSlUM8ORun6w">
+                                <i class="fa-brands fa-youtube footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.instagram.com/amaasrealestate/">
+                                <i class="fa-brands fa-instagram footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.linkedin.com/company/amaasrealestate/">
+                                <i class="fa-brands fa-linkedin-in footer-links"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer text-center text-white fw-bold fs-5 py-4 footer-border-top">
+        All rights reserved to Amaas Company © 2022
+    </div>
+
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+
+        <script>
+
+            let tabsArray = document.querySelectorAll(".tabs li");
+            let divs = document.querySelector(".one");
+            tabsArray.forEach((ele) => {
+                ele.addEventListener("click", function (e) {
+                    tabsArray.forEach((ele) => {
+                        if(ele.classList.contains("project-active"))
+                         ele.classList.remove("project-active");
+                    });
+                     e.currentTarget.classList.add("project-active");
+                    var type=ele.getAttribute('data-type');
+                    var project=[];
+                    if(type=="all"){getAllProjects(6,"all",e)}
+                    else if(type=="apartment")
+                        getAllProjects(6,"apartment",e);
+                    else if(type=="villa")
+                        getAllProjects(6,"villa",e)
+                    else if(type=="sold")
+                        getAllProjects(6,"sold",e)
+                    else if(type=="forsale")
+                        getAllProjects(6,"forsale",e);
+                    
+                });
+            });
+    
+
+            var swtestomnial = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction:false,
+                    },
+                    centeredSlides: true,
+                    loop:true,
+    
+                    breakpoints: {
+                    "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                    },
+                    "@1.00": {
+                        slidesPerView: 2,
+                        spaceBetween: 5,
+                    },
+                    "@2.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                },
+            });
+
+            var swipartner = new Swiper(".swpartners", {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction:false,
+                    },
+                    centeredSlides: true,
+                    loop:true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                    "@0.00": {
+                        slidesPerView: 2,
+                        spaceBetween: 2,
+                    },
+                    "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 5,
+                    },
+                    "@2.00": {
+                        slidesPerView: 6,
+                        spaceBetween: 10,
+                    },
+                },
+            });
+
+          </script>
+</body>
+</html>
