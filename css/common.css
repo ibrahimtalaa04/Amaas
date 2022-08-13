@@ -156,6 +156,12 @@
         .bg-footer{
             background-color: #28292A;
         }
+        .div-white{
+            position:relative;
+            border-radius:15px;
+            top:-30px;
+            background-color:#FFF;
+        }
         
         .link-footer-parent{
             position: relative;
