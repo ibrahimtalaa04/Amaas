@@ -40,23 +40,21 @@
             for(var i=0;i<count;i++)
             {
                 inner.innerHTML+=`<div class=" col-md-6 col-lg-4  mt-5 ">
-                    <div class="project h-100">
+                    <div class="project">
                         <a href="project-details.html?pid=${project[i].id}">
                             <img src="image/${project[i].gallery[0]}" class="project-img mb-2"/>
                         </a>
                         
-                        <h5 class="mb-1 ms-2">${project[i].name}</h5>
+                        <h5 class="mb-1 ms-2 fw-bold">${project[i].name}</h5>
                         <p class="mb-1 ms-2">${project[i].site}</p>
-                            <table class="table table-responsive table-striped mt-0">
+                            <table class="table table-responsive table-striped my-0 ">
                                 <tr><td>Area:</td><td>${project[i].area}</td></tr>
-                                <tr><td>No of building:</td><td>${project[i].nobuilding}</td></tr>
-                                <tr><td>No of units:</td><td>${project[i].nounits}</td></tr>
-                                <tr><td>No of available units:</td><td>${project[i].nounitsava}</td></tr>
-                                <tr><td>List Building:</td><td>${project[i].listbuilding}</td></tr>
+                                <tr><td class="fw-bold">No of building:</td><td>${project[i].nobuilding}</td></tr>
+                                <tr><td class="fw-bold">No of units:</td><td>${project[i].nounits}</td></tr>
+                                <tr><td class="fw-bold">No of available units:</td><td>${project[i].nounitsava}</td></tr>
+                                <tr><td class="fw-bold">List Building:</td><td>${project[i].listbuilding}</td></tr>
                             </table>
                     </div>
                 </div>`;
             }
     };
-
-    
