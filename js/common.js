@@ -48,7 +48,7 @@
                         <h5 class="mb-1 ms-2 fw-bold">${project[i].name}</h5>
                         <p class="mb-1 ms-2">${project[i].site}</p>
                             <table class="table table-responsive table-striped my-0 ">
-                                <tr><td>Area:</td><td>${project[i].area}</td></tr>
+                                <tr><td class="fw-bold">Area:</td><td>${project[i].area}</td></tr>
                                 <tr><td class="fw-bold">No of building:</td><td>${project[i].nobuilding}</td></tr>
                                 <tr><td class="fw-bold">No of units:</td><td>${project[i].nounits}</td></tr>
                                 <tr><td class="fw-bold">No of available units:</td><td>${project[i].nounitsava}</td></tr>
