@@ -75,6 +75,12 @@
        {
            box-shadow: none;
        }
+       @media (min-width: 992px){
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 0.2rem;
+                padding-left: 0.2rem;
+            }
+        }
        
        .bg-nav{
            background-image: url(../image/navbar-bg.png);
