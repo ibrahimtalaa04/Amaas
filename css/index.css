@@ -1,11 +1,11 @@
-.header-parent{
-    background-image: url(../image/header-cover-noopacity.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 630px;;
-}
+
 .head-100{
     font-size: 80px;
+}
+.carousel-caption{
+    left:5% !important;
+    top:25% !important;
+    bottom: unset !important;
 }
 
 .world-lines{
@@ -70,21 +70,17 @@
       margin-left: 10px;
   }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:991px) {
     .head-100{
         font-size: 40px;
     }
-    .header-parent{
-
-        height: 400px;;
+    .carousel-caption{
+        left:2% !important;
     }
 }
 @media screen and (max-width:575px) {
     .head-100{
         font-size: 35px;
     }
-    .header-parent{
 
-        height: 250px;
-    }
 }
