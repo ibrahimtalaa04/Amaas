@@ -1,0 +1,576 @@
+﻿
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <!-- Pages CSS Common-->
+    <link href="css/common.css" rel="stylesheet"/>
+    <!-- Index CSS Common-->
+    <link href="css/index.css"  rel="stylesheet"/>
+
+    <title>الصفحة الرئيسية</title>
+    <!-- JS database-->
+    <script src="js/database.js"></script>
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="css/swiper.css"/>
+
+    <link rel="icon" href="image/amaasicon.png" sizes="32x32">
+    <script>
+        window.addEventListener('load',function(e){
+            getAllProjects(6,"all",e);
+        });
+    </script>
+  
+</head>
+<body >
+
+    <div class="continer-fluid bg-nav">
+        <div class="container-lg p-0 p-lg-1">
+            <nav class="navbar navbar-expand-lg pe-0 py-0  ">
+                <a class="navbar-brand ms-3  mx-lg-0" href="index-ar.html">
+                    <img src="image/brand.png" class="logo-brand"/>
+                </a>
+                <div class="navbar-toggler menu-btn order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                    <div class="menu-btn__burger"></div>
+                </div>
+                <div class="collapse navbar-collapse order-3 order-lg-1 p-0 " id="navbarNav">
+                    <ul class="navbar-nav  ms-auto  d-flex justify-content-center align-items-center bg-md-nav py-1 py-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header link-header-active" href="index-ar.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="about-ar.html">عن أماس</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="projects-ar.html">المشاريع</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header"  href="gallery-ar.html">المعرض</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="news-ar.html">الأخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="contact-ar.html">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-Header" href="order-ar.html">احجز عرض</a>
+                        </li>            
+                    </ul>
+                </div>
+                <div class="order-1 order-lg-2 ms-auto ms-lg-0">
+                    <a class="nav-link nav-link-Header nav-link-lang" href="index.html">ENG</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid p-0" >
+            <div class="p-0">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="6000">
+                            <img src="image/header-cover-noopacity.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                                <div class="p-lg-0 h-100">
+                                    <div class="row h-100 justify-content-start align-items-center">
+                                        <div class="col-5 col-sm-3 col-lg-6 text-start">
+                                            <h1 class="text-white head-100 fw-bold">استكشف المزيد من الفلل</h1>
+                                            <a href="projects-ar.html" class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">رؤية المزيد</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="6000">
+                            <img src="image/header-cover-noopacity.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                                <div class="p-lg-0 h-100">
+                                    <div class="row h-100 justify-content-start align-items-center">
+                                        <div class="col-5 col-sm-3 col-lg-6 text-start">
+                                            <h1 class="text-white head-100 fw-bold">استكشف المزيد من الفلل</h1>
+                                            <a href="projects-ar.html" class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">رؤية المزيد</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="6000">
+                            <img src="image/header-cover-noopacity.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption ">
+                                <div class="p-lg-0 h-100">
+                                    <div class="row h-100 justify-content-start align-items-center">
+                                        <div class="col-5 col-sm-3 col-lg-6 text-start">
+                                            <h1 class="text-white head-100 fw-bold">استكشف المزيد من الفلل</h1>
+                                            <a href="projects-ar.html" class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">رؤية المزيد</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class=" bg-light-60 pt-5">
+                <div class="container-lg ">
+                    <div class="row">
+                        <div class="col-lg-5 col-lg-6">
+                            <img src="image/villa.png" class="w-100"/>
+                        </div>
+                        <div class="col-lg-6 col-lg-6 ms-auto mt-5 mt-sm-0 ">
+                            <h6 class="text-dark mb-4 fs-15">حيث تسكن أحلامك</h6>
+                            <h2 class="text-yellow mb-4 fs-30">عن شركة أماس</h2>
+                            <p class="text-dark-30 mb-4 fs-15 about-p">شركة تطوير عقاري تقوم ببناء وبيع مجموعة متنوعة من العقارات بجودة عالية وضمانات ممتدة وأسعار تنافسية ، ونسعى جاهدين لتحقيق أعلى المواصفات الهيكلية واختيار أفضل مواد البناء للوصول إلى معايير المجتمع العالية وكسب رضا المستهلك. </p>
+                            <div class="d-flex  mb-2">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                </div>
+                                <div class="text-dark-30">
+                                    انطلقت عام ٢٠٢١ في السابع عشر من يناير.
+                                </div>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                </div>
+                                <div class="text-dark-30">
+                                    بصدد الانتهاء من بناء ٧٥٠ ملكية حول المملكة تتنوع بين فلل و شقق.
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                </div>
+                                <div class="text-dark-30">
+                                    نتواجد في المنطقة الشرقية – الرياض حتي الان
+                                </div>
+                            </div>
+                            <div class="row w-100 row-cols-1 row-cols-sm-3 py-5 justify-content-center align-items-center">
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0  ">
+                                        <div class="square mb-3"><i class="fa-solid fa-building-shield"></i></div>
+                                        <h5 class="fw-bold">1000</h5>
+                                        <p>مشروع</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"><i class="fa-solid fa-city"></i></div>
+                                        <h5 class="fw-bold">1500</h5>
+                                        <p>شقة</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"><i class="fa-solid fa-house"></i></div>
+                                        <h5 class="fw-bold">2550</h5>
+                                        <p>فلة</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"><i class="fa-solid fa-hotel"></i></div>
+                                        <h5 class="fw-bold">5000</h5>
+                                        <p>مدينة</p>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                        <div class="square mb-3"><i class="fa-solid fa-pen-ruler"></i></div>
+                                        <h5 class="fw-bold">10550</h5>
+                                        <p>اجمالي المساحة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bg-yellow">
+                <div class="container-lg d-flex flex-column align-items-center py-5">
+                    <h1 class="text-dark mb-4 fw-bold fs-30">كيف تعمل أماس</h1>
+                    <img src="image/world with lines.png" class="world-lines"/>
+                    <div class="row text-center mt-3">
+                        <div class="col-lg-4 mt-4">
+                            <div class="px-4 py-3">
+                                <img src="image/explore.png" class="img-work-div" />
+                                <h3 class="mt-4 headline3">استكشف</h3>
+                                <p class="text-dark ">العديد من الخيارات المختلفة على الموقع والمميزات والأسعار مع تشابهها في الجودة والجمال.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div class="px-4 py-3">
+                                <img src="image/call.png" class="img-work-div" />
+                                <h3 class="mt-4 headline3">تواصل</h3>
+                                <p class="text-dark ">اسألنا عما يدور في ذهنك وناقش استفساراتك للوصول إلى اتفاق يرضي الجميع.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-4">
+                            <div class="px-4 py-3">
+                                <img src="image/smile.png" class="img-work-div" />
+                                <h3 class="mt-4 headline3">امتلك</h3>
+                                <p class="text-dark ">تهانينا! مع بضع خطوات سهلة ، تصبح فردًا من عائلة أماس ، وتمتلك منزل أحلامك.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light-60">
+                <div class=" container-lg pb-5">
+                    <div class=" row text-center pt-2">
+                        <h1 class="text-dark py-4 fw-bold fs-30">لماذا أماس</h1>
+                            <p class=" text-dark fw-bold mb-4">أسباب حب الناس لإيجاد منزل أحلامهم معنا</p>
+                        <div class=" col-lg-4 mt-2">
+                            <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
+                                <img src="image/location.png" class="mt-3 img-work-div">
+                                <p class="mt-3">التواجد في مواقع إستراتيجية محاطة بكافة الخدمات الهامة</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div class="m-2 mx-auto bg-white div-wth-shadow p-4">
+                                <img src="image/protection.png" class="mt-3 img-work-div">
+                                <p class="mt-3">تقديم ضمانات تصل إلى 25 عامًا على جميع الأساسيات.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-2">
+                            <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
+                                <img src="image/chat.png" class="mt-3 img-work-div">
+                                <p class="mt-3">ضمان التواصل المستمر بين مسؤولي أماس والعملاء لضمان أفضل خدمة ممكنة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" container-fluid">
+                    <div class="text-center">
+                        <h1 class="text-dark py-4 fw-bold fs-30">مشاريعنا</h1>
+                        <p class=" text-dark fw-bold mb-4">لدينا استثناءات مميزة</p>
+                    </div>
+                    <div class=" container-lg pb-5 justify-content-center bg-light-60 text-center">
+                        <ul class="tabs row row-cols-2 row-cols-lg-6 justify-content-center align-items-center">
+                            <li class="col btn-project my-2 me-3 project-active" data-type="all">الكل</li>
+                            <li class="col btn-project my-2 me-3" data-type="apartment">الشقق</li>
+                            <li class="col btn-project my-2 me-3" data-type="villa">الفلل</li>
+                            <li class="col btn-project my-2 me-3" data-type="sold">تم البيع</li>
+                            <li class="col btn-project my-2 me-3"data-type="forsale">مفتوح للبيع</li>
+                        </ul>
+                    </div>
+                    <div class="bg-light-60"></div>
+                    <div class="container-lg">
+                        <div class="one">
+
+                                <div class=" row align-items-stretch" id="innerProject">
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center py-5">
+                                    <a href="projects-ar.html" class="btn btn-yellow py-2 px-5 text-white">رؤية المزيد</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="pb-5 bg-light-60">
+    <div class=" container-lg pb-5 ">
+        <h1 class="text-dark mb-5 text-center fw-bold fs-30">ماذا قالوا عنا</h1>
+        <div class="pb-5" style="height: 300px;">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testomial  py-3 px-4">
+                            <div class="d-flex ">
+                                <div>
+                                    <img src="image/person1.png">
+                                </div>
+                                <div class="ms-3 mt-3 text-start">
+                                    <p class="testomial-p">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق</p>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="testomial-h6">محمد أحمد</h6>
+                                        <span class="testomial-span">ريادي</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testomial  py-3 px-4">
+                            <div class="d-flex ">
+                                <div>
+                                    <img src="image/person1.png">
+                                </div>
+                                <div class="ms-3 mt-3 text-start">
+                                    <p class="testomial-p">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق</p>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="testomial-h6">محمد أحمد</h6>
+                                        <span class="testomial-span">ريادي</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testomial  py-3 px-4">
+                            <div class="d-flex ">
+                                <div>
+                                    <img src="image/person1.png">
+                                </div>
+                                <div class="ms-3 mt-3 text-start">
+                                    <p class="testomial-p">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق</p>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="testomial-h6">محمد أحمد</h6>
+                                        <span class="testomial-span">ريادي</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg pb-5">
+    <h1 class="text-dark mb-5 text-center fw-bold fs-30">شركاؤنا</h1>
+
+        <div class="swiper swpartners">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner1.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner2.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner3.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner4.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner5.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner6.png" class="sw-img"/>
+            </div>
+            <div class="swiper-slide swp-slide">
+                <img src="image/partner7.png" class="sw-img"/>
+            </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+    <div class="container-fluid bg-footer pt-5">
+        <div class="container-lg mt-0 mt-lg-0 pt-0 pt-lg-0">
+            <div class="row pb-4">
+                <div class="col-lg-4 mt-5">
+                    <a href="index-ar.html"><img src="image/brand.png" class="logo-brand"/></a>
+                    <div class="mt-3">
+                        <p class="footer-company-desc">
+                            أماس هي شركة تطوير عقاري لبناء وبيع مجموعة متنوعة من العقارات بجودة عالية وضمانات ممتدة وأسعار تنافسية. نسعى جاهدين لتحقيق أعلى المواصفات الهيكلية واختيار أفضل مواد البناء للوصول إلى معايير المجتمع العالية وكسب رضا المستهلك.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 fw-bold mt-5 pe-5 ">
+                    <h5 class="link-footer-parent"><span class="">روابط مفيدة</span> </h5>
+                    <div class="row row-cols-2 w-100">
+                        <div class="col">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="index-ar.html" class="nav-link ms-0 mb-1 px-0  link-footer link-active-footer">الرئيسية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about-ar.html" class="nav-link ms-0  mb-1 px-0 link-footer">عن أماس</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="projects-ar.html" class="nav-link ms-0 mb-1  px-0 link-footer">المشاريع</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="gallery-ar.html" class="nav-link ms-0 mb-1  px-0 link-footer">المعرض</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="news-ar.html" class="nav-link ms-0 mb-1  px-0 link-footer">الأخبار</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact-ar.html" class="nav-link ms-0 mb-1 px-0  link-footer">تواصل معنا</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="order-ar.html" class="nav-link ms-0  mb-1 px-0 link-footer">احجز عرض</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="career-ar.html" class="nav-link ms-0 mb-1  px-0 link-footer">الوظائف</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="faq-ar.html" class="nav-link ms-0 mb-1  px-0 link-footer">أسئلة شائعة</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="privacy-ar.html" class="nav-link ms-0 mb-1  px-0 link-footer">سياسة الخصوصية</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="terms-ar.html" class="nav-link ms-0 mb-1  px-0 link-footer">قوانين الاستخدام</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h5 class="link-footer-parent"><span class="">النشرة الاخبارية</span> </h5>
+
+                            <form id="footerform" class="">
+                                <div class="">
+                                    <label for="emailtxt" class="form-label"></label>
+                                    <input type="text" class="form-control bg-transparent text-white py-2 px-2" id="emailtxt" >
+                                    <div class="invalid-email"></div>
+                                </div>
+                                <button class="btn w-100 mt-3 btn-yellow text-white" type="submit">اشترك</button>
+                            </form>
+                    <div class="mt-4">
+                        <div class="d-inline-block ms-1 me-3">
+                            <a href="http://facebook.com/people/Amaas-Realestate/10007915978616" >
+                                <i class="fa-brands fa-facebook-f footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block   me-3">
+                            <a href="https://twitter.com/amaasrealestate">
+                                <i class="fa-brands fa-twitter footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://api.whatsapp.com/message/UZV7GQTD6S7FA1">
+                                <i class="fa-brands fa-whatsapp footer-links"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.youtube.com/channel/UCKftYeW9JhMnSlUM8ORun6w">
+                                <i class="fa-brands fa-youtube footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.instagram.com/amaasrealestate/">
+                                <i class="fa-brands fa-instagram footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.linkedin.com/company/amaasrealestate/">
+                                <i class="fa-brands fa-linkedin-in footer-links"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer text-center text-white fw-bold fs-12 py-4 footer-border-top">
+        ©  جميع الحقوق محفوظة لدى شركة أماس 2022
+    </div>
+
+    <!--Bootstrap JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS-->
+    <script src="js/swiper.js"></script>
+    <!-- Pages JS Common-->
+    <script src="js/common-ar.js"></script>
+    
+        <script>
+            let tabsArray = document.querySelectorAll(".tabs li");
+            let divs = document.querySelector(".one");
+            tabsArray.forEach((ele) => {
+                ele.addEventListener("click", function (e) {
+                    tabsArray.forEach((ele) => {
+                        if(ele.classList.contains("project-active"))
+                            ele.classList.remove("project-active");
+                    });
+                    e.currentTarget.classList.add("project-active");
+                    var type=ele.getAttribute('data-type');
+                    var project=[];
+                    if(type=="all"){getAllProjects(6,"all",e)}
+                    else if(type=="apartment")
+                        getAllProjects(6,"apartment",e);
+                    else if(type=="villa")
+                        getAllProjects(6,"villa",e)
+                    else if(type=="sold")
+                        getAllProjects(6,"sold",e)
+                    else if(type=="forsale")
+                        getAllProjects(6,"forsale",e);
+                    
+                });
+            });
+            var swtestomnial = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction:false,
+                    },
+                    centeredSlides: true,
+                    loop:true,
+                    breakpoints: {
+                    "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 5,
+                    },
+                    "@2.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                },
+            });
+            var swipartner = new Swiper(".swpartners", {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction:false,
+                    },
+                    centeredSlides: true,
+                    loop:true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    breakpoints: {
+                    "@0.00": {
+                        slidesPerView: 2,
+                        spaceBetween: 2,
+                    },
+                    "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 5,
+                    },
+                    "@2.00": {
+                        slidesPerView: 6,
+                        spaceBetween: 10,
+                    },
+                },
+            });
+        </script>
+</body>
+</html>
